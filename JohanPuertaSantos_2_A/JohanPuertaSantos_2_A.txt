@@ -5,7 +5,7 @@
     for ending the user input (the e-mail). If I hadn't, only the first line would've been recorded,
     not the whole e-mail.
 
-3. Variables: user_input, random_response, and responses.
+3. Variables: common_phrases, email_content, words, total_words, spam_count, spam_phrases, likelihood,
 
 4. Several functions: create_readable_list, get_email, count_words, compare_email, calculate_likelihood, and main.
 
