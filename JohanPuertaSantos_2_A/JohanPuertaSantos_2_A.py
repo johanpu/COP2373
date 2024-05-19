@@ -3,6 +3,7 @@
 # spam messages. Each occurrence of a word adds a point to a spam score, which is then
 # displayed for the user to read, along with the likelihood that the message is spam
 # and the words and/or phrases that caused it to be marked as such.
+import sys
 
 def create_readable_list():
     # Create a document with all the phrases.
@@ -49,8 +50,8 @@ def create_readable_list():
 def get_email():
     print("This is a script that checks for spam likelihood in e-mails.")
     print()
-    print("Please paste your e-mail and press ENTER when done: ")
-    email_content = input()
+    print("Please paste your e-mail and, on a BLANK LINE, press CTRL+Z (CMD+D on MAC) when done: ")
+    email_content = sys.stdin.read()
     return email_content
 
 def count_words(email_content):
@@ -67,9 +68,8 @@ def compare_email(email_content):
     # Convert email content to lowercase
     email_content = email_content.lower()
 
-    # Initialize spam count for likelihood
+    # Initialize variables for amount of spam words and what phrases they are.
     spam_count = 0
-
     spam_phrases = []
 
     # Check each phrase from the list against the email content
@@ -79,9 +79,6 @@ def compare_email(email_content):
             spam_phrases.append(phrase)
 
     return spam_count, spam_phrases
-
-
-
 
 def calculate_likelihood(total_words, spam_count, spam_words):
     if total_words == 0:
