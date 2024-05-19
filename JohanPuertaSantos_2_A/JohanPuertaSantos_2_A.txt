@@ -1,7 +1,9 @@
 1. Created by: Johan Puerta Santos
 	on: May 19, 2024.
 
-2. This program is a spam-checker for emails.
+2. This program is a spam-checker for emails. (NOTE: due to a bug, I had to find an alternative to pressing ENTER
+    for ending the user input (the e-mail). If I hadn't, only the first line would've been recorded,
+    not the whole e-mail.
 
 3. Variables: user_input, random_response, and responses.
 
