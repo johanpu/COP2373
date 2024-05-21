@@ -1,20 +1,19 @@
 1. Created by: Johan Puerta Santos
 	on: May 19, 2024.
 
-2. This program is a spam-checker for emails. (NOTE: due to a bug, I had to find an alternative to pressing ENTER
-    for ending the user input (the e-mail). If I hadn't, only the first line would've been recorded,
-    not the whole e-mail.
+2. This program is a spam-checker for emails. The program requires an input that ends with two consecutive
+    line breaks to ensure the input isn't prematurely ended. This is a fix for past versions.
 
-3. Variables: common_phrases, email_content, words, total_words, spam_count, spam_phrases, likelihood,
+3. Variables: common_phrases, lines, line, email_content, words, total_words, spam_count, spam_phrases, likelihood.
 
 4. Several functions: create_readable_list, get_email, count_words, compare_email, calculate_likelihood, and main.
 
 5. Logical steps:
     1. Create a list and text file for the thirty commonly used phrases in spam emails.
-    2. Ask for user's input (the e-mail).
+    2. Ask for user's input (the e-mail). Wait for 2 consecutive blank lines to end input.
     3. Count the total number of words in the e-mail. This is for calculating the likelihood.
     4. Open the file and read each line.
-    5. Convert e-mail to all lowercase for easier comparing with phrases.
+    5. Convert e-mail to all lowercase for case-sensitivity.
     6. For each phrase, if the phrase is in the e-mail, add to spam count and record the found phrase.
     7. Using total words and total spam count, find the likelihood.
     8. Print spam likelihood, spam count, and recorded spam phrases.
