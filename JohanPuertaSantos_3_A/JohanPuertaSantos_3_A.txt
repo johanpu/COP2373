@@ -1,0 +1,17 @@
+1. Created by: Johan Puerta Santos
+	on: June 2, 2024.
+
+2. This program is a expense tracker that allows the user to input expenses. The program will then calculate
+    the total, highest, and lowest expenses.
+
+3. Variables: total_expense, highest_expense, lowest_expense, expenses, expense_type, expense_amount
+
+4. Several functions: main, get_expenses, calculate_expenses.
+
+5. Logical steps:
+    1. Create a list to store the expenses.
+    2. Create a loop to gather expenses from user input.
+    3. Calculate the total, highest, and lowest expenses using reduce method.
+    4. Print and display total, highest, and lowest expenses.
+
+6. Link: https://github.com/johanpu/COP2373
