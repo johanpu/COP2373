@@ -3,6 +3,18 @@
 # The program then calculates the likelihood of the e-mail being spam based on the number of spam words found
 # and records which words were marked as spam, along with how many were found.
 
+import time
+
+# Function used to record time elapsed.
+def make_timer(func):
+    def wrapper(*args, **kwargs):
+        t1 = time.time()
+        ret_val = func(*args, **kwargs)
+        t2 = time.time()
+        print("Time elapsed: ", t2 - t1, "seconds.")
+        return ret_val
+    return wrapper
+
 def create_readable_list():
     # Create a document with all 30 phrases.
     common_phrases = [
@@ -104,6 +116,7 @@ def calculate_likelihood(total_words, spam_count, spam_words):
     print(f"Amount of words marked as spam: {spam_count}")
     print("Words found: " + ", ".join(spam_words))
 
+@make_timer
 def main():
     create_readable_list()
     email_content = get_email()
