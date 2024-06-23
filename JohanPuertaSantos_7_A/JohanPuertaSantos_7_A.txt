@@ -1,0 +1,16 @@
+1. Created by: Johan Puerta Santos
+	on: June 23, 2024.
+
+2. This program was created to separate sentences from the user's input using reg. expression and tally them up.
+
+3. Variables: text, pattern, sentences, count.
+
+4. Functions: main.
+
+5. Logical steps:
+    1. Ask for user's input and stores into text variable.
+    2. Use regular expression to separate sentences using pattern. Separates into a list called sentences.
+    3. Initialize the variable count to 0. For each item in the sentences list, add 1 to count.
+    4. Print sentences found and the total tally.
+
+6. Link: https://github.com/johanpu/COP2

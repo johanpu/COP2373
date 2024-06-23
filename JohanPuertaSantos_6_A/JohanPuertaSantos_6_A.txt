@@ -1,0 +1,17 @@
+1. Created by: Johan Puerta Santos
+	on: June 23, 2024.
+
+2. This program was designed to validate the user's inputs. These inputs had to be an SSN, phone number, or zip code.
+
+3. Variables: pattern, ssn, zip_code, phone_number
+
+4. Functions: is_valid_ssn, is_valid_zip_code, is_valid_phone_number, main
+
+5. Logical steps:
+    1. Get user input (ssn, zip_code, phone_number) and store them in their respective variables.
+    2. Call is_valid_ssn, is_valid_zip_code, and is_valid_phone_number functions to validate variables.
+    3. If any return false, invalidate them and provide tips for formatting.
+    4. If any return "NONE", log that it was not provided by the user.
+    5. If any return true, validate them.
+
+6. Link: https://github.com/johanpu/COP2373
