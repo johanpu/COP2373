@@ -1,0 +1,17 @@
+1. Created by: Johan Puerta Santos
+	on: June 30, 2024.
+
+2. The purpose of this program is to read the 'grades.csv' file output from JohanPuertaSantos_8_A and output it in
+    a tabular format.
+
+3. Variables: data, reader.
+
+4. Functions: main.
+
+5. Logical steps:
+    1. Import CSV module.
+    2. Open 'grades.csv' file in reader mode.
+    3. Convert to list.
+    4. For each row in list, print in a specific format (tabular format).
+
+6. Link: https://github.com/johanpu/COP2373

@@ -1,0 +1,19 @@
+1. Created by: Johan Puerta Santos
+	on: June 30, 2024.
+
+2. The purpose of this program was to add data to CSV files. More specifically, student and exam data.
+
+3. Variables: student_count, headers, first_name, last_name, exam1, exam2, exam3, writer.
+
+4. Functions: main
+
+5. Logical steps:
+    1. Import CSV module.
+    2. Get student count from input.
+    3. Create headers for the CSV file.
+    4. Create a list (students) to store data.
+    5. Loop through student count and get first and last name, as well as the three exam scores.
+    6. Create 'grades.csv' file and write headers, then write student data.
+    7. Print confirmation end message.
+
+6. Link: https://github.com/johanpu/COP2373
