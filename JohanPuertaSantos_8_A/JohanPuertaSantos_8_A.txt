@@ -1,11 +1,12 @@
 1. Created by: Johan Puerta Santos
 	on: June 30, 2024.
 
-2. The purpose of this program was to add data to CSV files. More specifically, student and exam data.
+2. The purpose of this program was to add data to CSV files (specifically student and exam data.) Afterwards,
+    the program would read the file and display the data in a table format.
 
-3. Variables: student_count, headers, first_name, last_name, exam1, exam2, exam3, writer.
+3. Variables: student_count, headers, first_name, last_name, exam1, exam2, exam3, writer, reader, data.
 
-4. Functions: main
+4. Functions: createData, formatData.
 
 5. Logical steps:
     1. Import CSV module.
@@ -15,5 +16,7 @@
     5. Loop through student count and get first and last name, as well as the three exam scores.
     6. Create 'grades.csv' file and write headers, then write student data.
     7. Print confirmation end message.
+    8. Read 'grades.csv' file and turn into a list.
+    9. Reformat list per row and print in table format.
 
 6. Link: https://github.com/johanpu/COP2373

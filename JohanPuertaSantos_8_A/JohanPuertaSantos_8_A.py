@@ -1,9 +1,9 @@
 # This program is a simple grade recorder. It takes five inputs (First/Last name and three exam scores).
-# It stores these inputs into a CSV file, which can then be read by a separate, included program.
+# It stores these inputs into a CSV file, which is then read and reformatted into a table automatically.
 
 import csv
 
-def main():
+def createData():
     # Get student count.
     student_count = int(input("How many students would you like to input? "))
 
@@ -30,4 +30,15 @@ def main():
     # Print confirmation.
     print("Student data has been recorded to 'grades.csv'.")
 
-main()
+def formatData():
+    # Open 'grades.csv' file.
+    with open("grades.csv", "r", newline="") as file:
+        reader = csv.reader(file)
+        data = list(reader)
+
+    # Print data in tabular format.
+    for row in data:
+        print("{:<15} {:<15} {:<15} {:<15} {:<15}".format(*row))
+
+createData()
+formatData()
