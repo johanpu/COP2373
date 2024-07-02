@@ -1,0 +1,31 @@
+1. Created by: Johan Puerta Santos
+	on: July 1, 2024.
+
+2. This program was created to simulate a bank account containing the name, account number, amount and interest rate.
+    The test function at the end of the program tests the methods used by BankAcct using randomized values.
+
+3. Variables: name, acct_num, amount, interest_rate, new_rate, days, interest,
+    initial_balance, account, after_successful_wd_balance, test
+
+4. Functions: __init__, adjust_interest_rate, withdraw, deposit, balance,
+    calculate_interest, __str__, test_bank_acct, main, AND 1 CLASS (BankAcct).
+
+5. Logical steps:
+    1. Import random library to use for randomization of values in test function.
+    2. Define bank account class and its attributes, then define methods in the class for withdrawals,
+        deposits, balance, interest and adjusting interest rate, and
+        returning str representation of account information.
+    3. Define test function (test_bank_acc) and set the name.
+        Generate random values for account number, initial bank balance, and interest rate.
+    4. Create account instance for future referencing.
+    5. Print initial account details for user referencing.
+    6. Randomize an account deposit
+    7. Randomize a withdrawal between $200 and the total account balance.
+    8. Randomize a second withdrawal guaranteed to fail (always above account balance).
+    9. Calculate and print interest using initial interest rate in a 30-day period.
+    10. Generate a new interest rate (guaranteed to not be the same) between 1.20% and 4.00%.
+    11. Calculate and print interest in a 30-day period using new interest rate.
+    12. Print changed account details after steps six through eight and step ten.
+    13. Prompt user to start randomized test.
+
+6. Link: https://github.com/johanpu/COP2373
