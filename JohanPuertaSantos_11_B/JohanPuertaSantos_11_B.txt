@@ -1,0 +1,18 @@
+1. Created by: Johan Puerta Santos
+	on: July 2, 2024.
+
+2. This program was developed to determine the length of a hypotenuse of a right triangle,
+    given two pieces of information: the nearest angle (measured in degrees) and the length of the adjacent side.
+
+3. Variables: nearest_angle, adjacent, hypotenuse.
+
+4. Functions: input_data, calculate_hypotenuse, main.
+
+5. Logical steps:
+    1. Loop for valid angle input.
+    2. Loop for valid adjacent side length input.
+    3. Convert angle input to radians (math library cannot handle degrees).
+    4. Calculate hypotenuse using specific formula.
+    5. Print result.
+
+6. Link: https://github.com/johanpu/COP2373
