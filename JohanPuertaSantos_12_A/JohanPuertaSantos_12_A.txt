@@ -1,0 +1,27 @@
+1. Created by: Johan Puerta Santos
+	on: July 3, 2024.
+
+2. This program calculates the mean, median, std. dev., min, and the max of all grades for each exam in 'grades.csv',
+    and then the combination of all three. It uses the NumPy library to accomplish this.
+
+3. Variables: dtype, grades, exam1_mean, exam2_mean, exam3_mean, combined_mean,
+    exam1_median, exam2_median, exam3_median, combined_median, exam1_std, exam2_std, exam3_std, combined_std,
+    exam1_min, exam2_min, exam3_min, combined_min, exam1_max, exam2_max, exam3_max, combined_max,
+    exam1_passing, exam2_passing, exam3_passing, pass_percentage.
+
+4. Functions: get_data, __init__, mean, median, std_dev, min, max, determine_passing, main.
+    One class (CalculateExams).
+
+5. Logical steps:
+    1. Import NumPy as np.
+    2. Separate exam data into variables using dtype.
+    3. Loop to open 'grades.csv'. If empty or not found, break.
+    4. Define CalculateExams class and its attributes.
+    5. Define mean, median, std_dev, min, max, and determine_passing functions.
+    6. Get the mean, median, std. dev., min, and max from each exam in their respective functions.
+    7. Get the combined mean, median, std. dev., min, and max in their respective functions.
+    8. Determine which students are passing/failing each exam (passing grade >= 60).
+    9. Determine overall passing percentage by adding all passes and dividing by 0.3 (total score / 100).
+    10. Define main function to run the program and print all results.
+
+6. Link: https://github.com/johanpu/COP2373

@@ -74,7 +74,7 @@ class CalculateExams:
         exam1_passes = np.sum([self.grades['exam1'] >= 60])
         exam2_passes = np.sum(self.grades['exam2'] >= 60)
         exam3_passes = np.sum(self.grades['exam3'] >= 60)
-        pass_percentage = ((exam1_passes + exam2_passes + exam3_passes) / 30) * 100
+        pass_percentage = ((exam1_passes + exam2_passes + exam3_passes) / 0.3)
 
         return exam1_passes, exam2_passes, exam3_passes, pass_percentage
 
@@ -106,8 +106,6 @@ def main(grades):
             f"Across all exams, the overall pass percentage was {pass_percentage:.2f}%.")
 
 
-
-
-
-
-main(grades=get_data())
+if __name__ == '__main__':
+    grades = get_data()
+    main(grades)
