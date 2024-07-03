@@ -20,8 +20,8 @@
     5. Define mean, median, std_dev, minimum, maximum, and determine_passing functions.
     6. Get the mean, median, std. dev., minimum, and maximum from each exam in their respective functions.
     7. Get the combined mean, median, std. dev., minimum, and maximum in their respective functions.
-    8. Determinimume which students are passing/failing each exam (passing grade >= 60).
-    9. Determinimume overall passing percentage by adding all passes and dividing by 0.3 (total score / 100).
+    8. Determine which students are passing/failing each exam (passing grade >= 60).
+    9. Determine overall passing percentage by adding all passes and dividing by 0.3 (total score / 100).
     10. Define main function to run the program and print all results.
 
 6. Link: https://github.com/johanpu/COP2373
