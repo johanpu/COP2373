@@ -66,6 +66,17 @@ def format_data():
         print("{:<15} {:<15} {:<15} {:<15} {:<15}".format(*row))
 
 
+# Cleans up the ends of each row. Strips trailing commas that sometimes popped up and messed with week 11's assignment.
+def cleanData():
+    with open("grades.csv", "r", newline="") as file:
+        lines = file.readlines()
+
+    cleaned_lines = [line.rstrip(",\n") + "\n" for line in lines]
+
+    with open("grades.csv", "w", newline="") as file:
+        file.writelines(cleaned_lines)
+
+
 def main():
     append_file = existing_data()
     create_data(append_file)
