@@ -11,7 +11,7 @@
 5. Logical steps:
     1. Loop for valid angle input.
     2. Loop for valid adjacent side length input.
-    3. Convert angle input to radians (math library cannot handle degrees).
+    3. Convert angle input to radians (math package cannot handle degrees).
     4. Calculate hypotenuse using specific formula.
     5. Print result.
 
