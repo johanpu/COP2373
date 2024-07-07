@@ -2,7 +2,7 @@
 # The test function at the end of the program tests the methods used by BankAcct using randomized values.
 
 
-# Import random module. Used to randomize all values in the test function.
+# Imports random module. Used to randomize all values in the test function.
 import random
 
 

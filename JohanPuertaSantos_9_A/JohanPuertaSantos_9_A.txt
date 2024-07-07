@@ -5,7 +5,7 @@
     The test function at the end of the program tests the methods used by BankAcct using randomized values.
 
 3. Variables: name, acct_num, amount, interest_rate, new_rate, days, interest,
-    initial_balance, account, after_successful_wd_balance, test
+    initial_balance, account, after_successful_wd_balance, test.
 
 4. Functions: __init__, adjust_interest_rate, withdraw, deposit, balance,
     calculate_interest, __str__, test_bank_acct, main, AND 1 CLASS (BankAcct).
