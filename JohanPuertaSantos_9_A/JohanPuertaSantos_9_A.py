@@ -90,15 +90,8 @@ def test_bank_acct():
 
 
 def main():
-    test = input("Begin randomized test for BankAcct? (y/n): ")
-    if test.lower() == 'y':
-        print()
-        test_bank_acct()
-    if test.lower() == 'n':
-        # Last updated: July 1, 2024.
-        print("Program terminated.")
-    else:
-        print("Invalid input. Program terminated.")
+    test_bank_acct()
 
 
-main()
+if __name__ == "__main__":
+    main()

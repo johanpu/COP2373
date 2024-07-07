@@ -26,6 +26,5 @@
     10. Generate a new interest rate (guaranteed to not be the same) between 1.20% and 4.00%.
     11. Calculate and print interest in a 30-day period using new interest rate.
     12. Print changed account details after steps six through eight and step ten.
-    13. Prompt user to start randomized test.
 
 6. Link: https://github.com/johanpu/COP2373
