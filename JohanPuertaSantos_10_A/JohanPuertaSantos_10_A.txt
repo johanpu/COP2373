@@ -1,0 +1,16 @@
+1. Created by: Johan Puerta Santos
+	on: July 14, 2024.
+
+2. Completes the Money class from 'Money and Inheritance'. It then tests the class.
+
+3. Variables: value1, value2, multiply_factor, money1, money2, add_result, sub_result, mul_result.
+
+4. Functions: test_money_operations. In Money Class: __new__, __add__, __sub, __mul__, __repr__.
+
+5. Logical steps:
+    1. Create class to handle operations (Money).
+    2. Ensure that operations can handle different types of objects.
+    3. Create different values for testing using randomization.
+    4. Print results.
+
+6. Link: https://github.com/johanpu/COP2373

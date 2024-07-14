@@ -1,0 +1,25 @@
+1. Created by: Johan Puerta Santos
+	on: July 14, 2024.
+
+2. This program inherits the Money class from 10A and uses it to replace 9A's BankAcct class's deposit
+    and withdraw methods with the add and subtract methods from Money. It then utilizes 9A's
+    test function to test the new methods.
+
+3. Variables: name, acct_num, amount, interest_rate, amount_to_withdraw, amount_to_deposit, interest,
+    initial_balance, account, after_successful_wd_balance, new_rate.
+
+4. Functions: test_bank_acct. In Money class: __add__, __sub__, __mul, __repr__. In BankAcct class: __init__,
+    adjust_interest_rate, withdraw, deposit, balance, calculate_interest, __str__.
+
+5. Logical steps:
+    1. Create class to handle operations (Money).
+    2. Ensure that operations can handle different types of objects.
+    3. Create bank account class (BankAcct) that inherits add/sub from Money.
+    4. Create test function that tests the methods in BankAcct.
+    5. Initialize name, account number, initial balance, and interest rate. Randomize latter three.
+    6. Perform test operations using randomized values. Test withdraw 2x to showcase insufficient funds error.
+    7. Loop for new interest rate to ensure it changes.
+    8. Calculate interest for 30 days at initial and new interest rate.
+    9. Print all results.
+
+6. Link: https://github.com/johanpu/COP2373
