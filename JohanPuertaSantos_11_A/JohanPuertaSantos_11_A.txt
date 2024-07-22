@@ -1,0 +1,22 @@
+1. Created by: Johan Puerta Santos
+	on: July 2, 2024.
+
+2. Simulates a hand of Poker and then subsequently displays the hand before and after user replacement.
+
+3. Variables: n_decks, cards_list, cards_in_play_list, discards_list, new_card, cards_to_replace,
+    deck, hand_size, hand, pos.
+
+4. Functions: __init__, deal, new_hand, replace_cards, simulate_replacement.
+
+5. Logical steps:
+    1. Import random module for shuffled decks.
+    2. In the Deck class, define __init__, deal, new_hand, and replace_cards.
+    3. If the deck is empty, then shuffle the discarded list, and copy it to card_list. Empty discards_list.
+    4. From the card_list, grab one and initialize it as new_card, then return it.
+    5. For preparing a new hand, clear all cards in play after adding them to the discards_list.
+    6. Replace cards by removing each one from cards_in_play_list and add them to discards_list. Call deal function.
+    7. Ask the user for the positions of the cards in their hands they wish to replace.
+    8. If input is valid, call replace_cards and replace them with new ones from the deck.
+    9. If invalid, print error message and don't replace.
+
+6. Link: https://github.com/johanpu/COP2373

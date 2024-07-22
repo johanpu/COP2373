@@ -7,14 +7,14 @@ import random
 class Deck:
     def __init__(self, n_decks=1):
         self.card_list = [num + suit
-                          for suit in '\u2665\u2666\u2663\u2660'
-                          for num in 'A23456789TJQK'
+                          for suit in '\u2665\u2666\u2663\u2660'  # Unicode for hearts, diamonds, clubs, spades.
+                          for num in 'A23456789TJQK'  # Ace through King.
                           for deck in range(n_decks)]
         self.cards_in_play_list = []
         self.discards_list = []
         random.shuffle(self.card_list)
 
-    # Book used this method for deal, not sure why if only one hand is used?
+    # Book method for dealing.
     def deal(self):
         if len(self.card_list) < 1:
             random.shuffle(self.discards_list)
@@ -26,6 +26,7 @@ class Deck:
 
         return new_card
 
+    # Function for preparing a new hand. Clears cards_in_play_list after copying to discards_list.
     def new_hand(self):
         self.discards_list += self.cards_in_play_list
         self.cards_in_play_list.clear()
@@ -46,7 +47,7 @@ def simulate_replacement():
 
     print(f"Initial hand: {hand}")
 
-    # Asks user for cards to replace (must be between 1 -5.)
+    # Asks user for cards to replace (must be between 1 - 5.)
     cards_to_replace = input("Enter the positions of cards to replace (separated by commas, from 1 - 5): ")
     cards_to_replace = [int(pos) - 1 for pos in cards_to_replace.split(',') if pos.strip().isdigit()]
 
@@ -54,11 +55,10 @@ def simulate_replacement():
     if all(0 <= pos < hand_size for pos in cards_to_replace):
         for pos in sorted(cards_to_replace, reverse=True):
             deck.replace_cards([hand[pos]])
-            hand[pos] = deck.cards_in_play_list[-1]  # Get the last dealt card
+            hand[pos] = deck.cards_in_play_list[-1]
         print(f"Final hand: {hand}")
     else:
         print("\nInvalid position(s) entered. No cards replaced.")
 
 
-if __name__ == "__main__":
-    simulate_replacement()
+simulate_replacement()
