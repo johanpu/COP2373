@@ -1,0 +1,22 @@
+1. Created by: Johan Puerta Santos
+	on: July 7, 2024.
+
+2. The purpose of this program is to simulate population growth and output the corresponding graph. It takes
+    information from a pre-made list of ten Florida cities and their 2023 populations.
+
+3. Variables: population_data, conn, cursor, city, pop, initial_pop, current_pop,
+    year, results, data, years, populations, selected_city.
+
+4. Functions: create_database, query_city, plot_population_growth, main.
+
+5. Logical steps:
+    1. Import sqlite3 and matplotlib modules.
+    2. Create a list of ten Floridian cities' populations in 2023.
+    3. Create SQLite database (population_JPS.db) and population table with the fields city, year, and population.
+    4. Insert population data from original list to table. Simulate growth for 20 years @ 2% growth per year.
+    5. Replace original values in population table. Define results variable using query_city function to
+        fetch all results.
+    6. Create graph plot using query results and matplotlib.
+    7. Prompt the user to enter a valid city name, then query, plot, and print population growth.
+
+6. Link: https://github.com/johanpu/COP2373
