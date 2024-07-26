@@ -61,22 +61,22 @@ class CalculateExams:
         return combined_std_dev, exam1_std_dev, exam2_std_dev, exam3_std_dev
 
     def minimum(self):
-        # Same method as mean, but uses np.minimum.
-        exam1_minimum = np.minimum(self.grades['exam1'])
-        exam2_minimum = np.minimum(self.grades['exam2'])
-        exam3_minimum = np.minimum(self.grades['exam3'])
+        # Use np.min to find the minimum value in each exam.
+        exam1_minimum = np.min(self.grades['exam1'])
+        exam2_minimum = np.min(self.grades['exam2'])
+        exam3_minimum = np.min(self.grades['exam3'])
 
-        combined_minimum = np.minimum(np.array([exam1_minimum, exam2_minimum, exam3_minimum]))
+        combined_minimum = np.min(np.array([exam1_minimum, exam2_minimum, exam3_minimum]))
 
         return combined_minimum, exam1_minimum, exam2_minimum, exam3_minimum
 
     def maximum(self):
         # Self-explanatory. Uses np.maximum.
-        exam1_maximum = np.maximum(self.grades['exam1'])
-        exam2_maximum = np.maximum(self.grades['exam2'])
-        exam3_maximum = np.maximum(self.grades['exam3'])
+        exam1_maximum = np.max(self.grades['exam1'])
+        exam2_maximum = np.max(self.grades['exam2'])
+        exam3_maximum = np.max(self.grades['exam3'])
 
-        combined_maximum = np.maximum(np.array([exam1_maximum, exam2_maximum, exam3_maximum]))
+        combined_maximum = np.max(np.array([exam1_maximum, exam2_maximum, exam3_maximum]))
 
         return combined_maximum, exam1_maximum, exam2_maximum, exam3_maximum
 
